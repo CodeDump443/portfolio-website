@@ -1,10 +1,7 @@
 import Navbar from '@/components/Navbar'
 import './globals.css'
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
 import Sidebar from '@/components/Sidebar'
-
-const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -18,11 +15,18 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <head>
+        {/* Подключение шрифта Inter напрямую через Google Fonts */}
+        <link
+          href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+          rel="stylesheet"
+        />
+      </head>
+      <body>
         <Navbar />
         <Sidebar />
         {children}
-        </body>
+      </body>
     </html>
   )
 }
