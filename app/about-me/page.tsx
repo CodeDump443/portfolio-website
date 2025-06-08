@@ -1,30 +1,23 @@
-import ServiceSlider from '@/components/ServiceSlider';
-import Image from 'next/image';
-import React from 'react';
+import ServiceSlider from '@/components/ServiceSlider'
+import Image from 'next/image'
+import React from 'react'
 
 const Page = () => {
   return (
-    <div className='flex flex-col md:flex-row items-start md:items-center bg-[#0C011A] min-h-screen overflow-hidden relative'>
+    <div className='flex items-center bg-[#0C011A] h-screen overflow-hidden relative'>
 
-      {/* Левый блок с текстом */}
-      <div className='w-full md:w-1/2 px-6 md:px-60 pt-10 md:pt-0 pb-6 md:pb-0 z-10'>
-        <h1 className="text-[28px] sm:text-[36px] md:text-[50px] text-white font-semibold">
+      {/* Текст с отступами слева */}
+      <div className='pl-20 md:pl-60 flex flex-col gap-4 max-w-[400px]'>
+        <h1 className="text-[36px] md:text-[44px] text-white font-semibold">
           My goals<span className="text-blue-500">.</span>
         </h1>
-        <p className="text-[14px] sm:text-[15px] md:text-[16px] text-gray-200 md:text-gray-400 max-w-[350px] mt-4">
+        <p className="text-[16px] text-gray-200 md:text-gray-400 leading-relaxed">
           В своей будующей работе я стремлюсь постепенно развиваться в разных направлениях, связанных с созданием игр. Мне интересно лучше понять, как устроены игровые среды, научиться уверенно работать с кодом и создавать увлекательные истории. Я хочу разобраться, как продумываются внутренние механики и сделать игровой процесс понятным и приятным для пользователя. Со временем надеюсь найти свой подход и стиль, чтобы проекты чувствовались живыми и самобытными. Справа карточки с шагами, которые необходимо проделать ради достижения цели.
         </p>
       </div>
 
-      {/* Слайдер */}
-      <div className='w-full md:w-1/2 px-6 md:px-0 md:pr-20 z-10 mt-2 md:mt-0'>
-        <div className='w-full max-w-[600px] mx-auto md:mx-0'>
-          <ServiceSlider />
-        </div>
-      </div>
-
-      {/* Лампочка (только на десктопе) */}
-      <div className='absolute -left-36 bottom-5 rotate-12 animate-pulse duration-75 hidden md:block z-0'>
+      {/* Лампочка */}
+      <div className='absolute -left-36 bottom-5 rotate-12 animate-pulse duration-75 hidden md:block'>
         <Image
           src="/assets/bulb.png"
           alt='bulb'
@@ -33,8 +26,13 @@ const Page = () => {
           className='w-full h-full'
         />
       </div>
-    </div>
-  );
-};
 
-export default Page;
+      {/* Слайдер с отступом слева, чуть ближе к тексту */}
+      <div className='ml-12 w-full max-w-[700px]'>
+        <ServiceSlider />
+      </div>
+    </div>
+  )
+}
+
+export default Page
