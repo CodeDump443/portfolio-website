@@ -54,5 +54,3 @@ const ServiceSlider = () => {
 
 export default ServiceSlider;
 
-
-export default ServiceSlider;
