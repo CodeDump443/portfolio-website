@@ -7,7 +7,7 @@ const Page = () => {
     <div className='flex flex-col md:flex-row items-start md:items-center bg-[#0C011A] min-h-screen overflow-hidden relative'>
 
       {/* Левый блок с текстом */}
-      <div className='w-full md:w-1/2 px-6 md:px-60 pt-10 md:pt-0 pb-10 md:pb-0 z-10'>
+      <div className='w-full md:w-1/2 px-6 md:px-60 pt-10 md:pt-0 pb-6 md:pb-0 z-10'>
         <h1 className="text-[28px] sm:text-[36px] md:text-[50px] text-white font-semibold">
           My goals<span className="text-blue-500">.</span>
         </h1>
@@ -17,8 +17,8 @@ const Page = () => {
       </div>
 
       {/* Слайдер */}
-      <div className='w-full md:w-1/2 px-6 md:px-0 flex justify-center md:justify-end z-10 mt-5 md:mt-0'>
-        <div className='w-full max-w-[600px]'>
+      <div className='w-full md:w-1/2 px-6 md:px-0 md:pr-20 z-10 mt-2 md:mt-0'>
+        <div className='w-full max-w-[600px] mx-auto md:mx-0'>
           <ServiceSlider />
         </div>
       </div>
