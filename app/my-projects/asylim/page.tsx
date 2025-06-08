@@ -11,7 +11,7 @@ export default function AsylimPage() {
 
     const link = document.createElement("a");
     link.href = "/assets/projects/asylim.pdf";
-    link.download = "psycho-idea.pdf";
+    link.download = "asylim.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -26,7 +26,7 @@ export default function AsylimPage() {
           className="cursor-pointer rounded-md overflow-hidden hover:opacity-80 transition duration-200"
         >
           <Image
-            src="/assets/projects/asylim.gif"
+            src="/assets/space/asylim.gif"
             alt="Asylim Project"
             width={600}
             height={600}
