@@ -5,7 +5,7 @@ import React from 'react';
 const Page = () => {
   return (
     <div className='flex flex-col md:flex-row items-start md:items-center bg-[#0C011A] min-h-screen overflow-hidden relative px-6 md:px-20 py-10 md:py-0'>
-      
+
       {/* Левый блок с текстом */}
       <div className='flex flex-col gap-4 w-full md:w-1/2 text-center md:text-left z-10'>
         <h1 className="text-[28px] sm:text-[36px] md:text-[50px] text-white font-semibold leading-tight">
@@ -17,8 +17,8 @@ const Page = () => {
       </div>
 
       {/* Слайдер */}
-      <div className="w-full md:w-1/2 mt-10 md:mt-0 flex justify-center md:justify-end z-10">
-        <div className="w-full max-w-[100%] sm:max-w-[90%] md:max-w-[600px] transform scale-[0.95] sm:scale-100 transition-all duration-300">
+      <div className="w-full md:w-1/2 flex justify-center md:justify-end z-10 order-last md:order-none mt-10 md:mt-0">
+        <div className="w-full max-w-[100%] sm:max-w-[90%] md:max-w-[600px] scale-100 transition-all duration-300">
           <ServiceSlider />
         </div>
       </div>
