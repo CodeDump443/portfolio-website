@@ -4,15 +4,15 @@ import React from 'react'
 
 const Page = () => {
   return (
-    <div className='flex flex-col md:flex-row items-center bg-[#0C011A] h-screen overflow-hidden'>
+    <div className='flex flex-col md:flex-row items-center bg-[#0C011A] h-screen overflow-hidden relative'>
 
       {/* Текстовый блок */}
-      <div className='pl-20 md:pl-60 flex flex-col gap-3 pb-60 md:pb-0'>
-        <h1 className="text-[50px] text-white font-semibold">
+      <div className='pl-4 sm:pl-6 md:pl-60 flex flex-col gap-3 pb-20 md:pb-0'>
+        <h1 className="text-[28px] sm:text-[36px] md:text-[50px] text-white font-semibold">
           My goals<span className="text-blue-500">.</span>
         </h1>
-        <p className="max-w-[350px] text-[16px] text-gray-200 md:text-gray-400">
-          В своей будующей работе я стремлюсь постепенно развиваться в разных направлениях, связанных с созданием игр. Мне интересно лучше понять, как устроены игровые среды, научиться уверенно работать с кодом и создавать увлекательные истории. Я хочу разобраться, как продумываются внутренние механики и сделать игровой процесс понятным и приятным для пользователя. Со временем надеюсь найти свой подход и стиль, чтобы проекты чувствовались живыми и самобытными.Справа карточки с шагами, которые необходимо проделать ради достижения цели.
+        <p className="max-w-[90%] sm:max-w-[350px] text-[14px] sm:text-[16px] md:text-[16px] text-gray-200 md:text-gray-400">
+          В своей будующей работе я стремлюсь постепенно развиваться в разных направлениях, связанных с созданием игр. Мне интересно лучше понять, как устроены игровые среды, научиться уверенно работать с кодом и создавать увлекательные истории. Я хочу разобраться, как продумываются внутренние механики и сделать игровой процесс понятным и приятным для пользователя. Со временем надеюсь найти свой подход и стиль, чтобы проекты чувствовались живыми и самобытными. Справа карточки с шагами, которые необходимо проделать ради достижения цели.
         </p>
       </div>
 
@@ -28,10 +28,9 @@ const Page = () => {
       </div>
 
       {/* Слайдер */}
-      <div className='w-full md:w-auto md:ml-auto px-6 md:px-0 mt-6 md:mt-0'>
+      <div className='w-full md:w-auto md:ml-20 mt-6 md:mt-0'>
         <ServiceSlider />
       </div>
-
     </div>
   )
 }
