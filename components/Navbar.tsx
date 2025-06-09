@@ -6,8 +6,8 @@ const Navbar = () => {
   return (
     <div className="fixed top-0 bg-transparent z-[20] w-full flex gap-5 md:justify-between md:px-60 p-5">
       <h1 className="text-white text-[38px]">
-        <span className="font-thin">Frame of </span>
-        <span className="font">Thought</span>
+        <span className="font-thin">Концептум </span>
+        <span className="font">Фактор</span>
         <span className="text-blue-500">.</span>
       </h1>
       <div className="flex flex-row gap-5">
