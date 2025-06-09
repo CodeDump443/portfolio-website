@@ -80,7 +80,7 @@ export const ServiceData = [
   {
     icon: RxReader,
     title: "Mastery",
-    content: "Изучение движков",
+    content: "Изучение игровых движков: Unreal Engine, Unity3D, PlayCanvas, Defold и т.п",
     backgroundImage: "/assets/space/game-engines.png",
   },
   {
