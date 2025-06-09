@@ -86,31 +86,31 @@ export const ServiceData = [
   {
     icon: RxCrop,
     title: "Development",
-    content: "Разработка",
+    content: "Разработка кода: оптимизация, алгоритмы",
     backgroundImage: "/assets/space/prototype.png",
   },
   {
     icon: RxPencil2,
     title: "Narrative",
-    content: "Написание качественной истории",
+    content: "Написание качественной истории для привлечения заинтересованности",
     backgroundImage: "/assets/space/narrative.png",
   },
   {
     icon: RxDesktop,
     title: "Systems",
-    content: "Проектирование логики",
+    content: "Проектирование логики, определение правил внутри игры ",
     backgroundImage: "/assets/space/design.png",
   },
   {
     icon: RxAccessibility,
     title: "Experience",
-    content: "Формирование пользовательского опыта",
+    content: "Формирование пользовательского опыта в зависимости от стиля UI/UX",
     backgroundImage: "/assets/space/game-ux.png",
   },
   {
     icon: RxRocket,
     title: "Vision",
-    content: "Создание своего собственного стиля",
+    content: "Создание своего собственного стиля для большего охвата аудитории и вовлеченности",
     backgroundImage: "/assets/space/visual-styles1.jpg",
   },
 ]
